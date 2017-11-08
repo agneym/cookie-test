@@ -10,7 +10,9 @@
   <h1>Merchant site 1</h1>
   <script src="./cookies.js"></script>
   <script>
-    fetch('http://10.10.1.246:3000')
+    fetch('http://10.10.1.246:3000', {
+      credentials: 'include',
+    })
       .then((res)=>{
         return res.json();
       })
